@@ -10,7 +10,7 @@ All data is stored **locally in the browser** using the **LocalStorage API**, so
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-
+- [Live Demo](#live-demo)
 
 ---
 
@@ -40,7 +40,11 @@ Each transaction can be **added or deleted**, and all data is **saved automatica
 | **HTML5** | Page structure |
 | **CSS3** | Styling and layout |
 | **JavaScript (ES6)** | Logic, DOM manipulation |
-| **LocalStorage API** | Data storage in browser |
 
 ---
 
+## 🚀 Live Demo
+Experience the application in action here:  
+🔗 [https://vamohammedilyas.github.io/Expence_tracker/](https://vamohammedilyas.github.io/Expence_tracker/)
+
+---
