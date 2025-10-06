@@ -81,7 +81,7 @@ h1 {
 }
 
 .list li.minus {
-  border-color: red;
+  border-color: rgb(221, 28, 28);
 }
 
 .delete-btn {
