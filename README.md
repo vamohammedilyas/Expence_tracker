@@ -1,58 +1,46 @@
-project:
-  name: Expense Tracker
-  live_url: https://vamohammedilyas.github.io/Expence_tracker/
-  description: >
-    A simple, interactive web application to track income and expenses,
-    built with HTML, CSS, and JavaScript. Transactions are stored in the
-    browser via localStorage so data persists across sessions.
-  version: 1.0.0
+# 💰 Expense Tracker
 
-author:
-  name: Mohammed Ilyas
-  email: mohammedilyasva2004@gmail.com
- 
+A simple and interactive **Expense Tracker** web application built using **HTML, CSS, and JavaScript**.  
+It allows users to **add income and expenses**, track their **total balance**, and view a history of transactions.  
+All data is stored **locally in the browser** using the **LocalStorage API**, so it remains even after refreshing.
 
-technologies:
-  - html
-  - css
-  - javascript
+---
+
+## 📜 Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
 
 
-features:
-  - Add income or expense transactions
-  - View transaction history
-  - Delete transactions
-  - Show balance, total income, and total expense
-  - Data persistence using localStorage
-  - Responsive UI
+---
 
-project_structure:
-  - index.html       # Main HTML file with app structure
-  - style.css        # CSS styles and layout
-  - script.js        # JavaScript logic and interaction
+## 🧾 Project Overview
+This Expense Tracker helps users record their income and expenses in a simple UI.  
+It dynamically calculates:
+- Total Balance 💰  
+- Total Income ➕  
+- Total Expense ➖  
 
-setup:
-  prerequisites:
-    - Modern web browser (Chrome, Firefox, Safari, Edge)
-  steps:
-    - Clone or download the repo
-    - Navigate into project directory
-    - Open index.html in browser
-    - Use the app via live link or locally
+Each transaction can be **added or deleted**, and all data is **saved automatically** in `localStorage` — no backend required.
 
-usage:
-  - Enter a description (text) for your transaction
-  - Enter an amount (positive = income, negative = expense)
-  - Click “Add transaction”
-  - The UI updates balance, income, expense automatically
-  - Click the delete (❌) button to remove a transaction
-  - Refreshing the page keeps data (thanks to localStorage)
+---
 
-future_improvements:
-  - Add categories (Food, Travel, Utilities, etc.)
-  - Graphs and charts (using Chart.js or similar)
-  - Monthly / weekly filtering
-  - Export data (CSV, PDF)
-  - Theme toggle (Dark / Light mode)
-  - Link to backend or cloud storage for multi-device sync
+## ✨ Features
+✅ Add and remove income or expense transactions  
+✅ View total balance, total income, and total expenses  
+✅ Data persistence using LocalStorage  
+✅ Responsive and minimal UI design  
+✅ Real-time updates on every transaction  
+
+---
+
+## 🧠 Tech Stack
+| Technology | Purpose |
+|-------------|----------|
+| **HTML5** | Page structure |
+| **CSS3** | Styling and layout |
+| **JavaScript (ES6)** | Logic, DOM manipulation |
+| **LocalStorage API** | Data storage in browser |
+
+---
 
