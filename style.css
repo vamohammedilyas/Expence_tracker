@@ -77,7 +77,7 @@ h1 {
 }
 
 .list li.plus {
-  border-color: green;
+  border-color: rgb(9, 153, 9);
 }
 
 .list li.minus {
