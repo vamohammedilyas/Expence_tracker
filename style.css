@@ -1,120 +1,176 @@
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Body */
 body {
-  background: #f4f4f4;
+  background: linear-gradient(to right, #f9f9f9, #e0f7fa);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
+/* Main container */
 .container {
-  width: 350px;
-  background: white;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 380px;
+  background: linear-gradient(145deg, #ffffff, #e0e0e0);
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.3);
+}
+
+/* Heading */
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #222;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
+/* Balance / Summary */
 .balance-box {
   text-align: center;
-  margin: 20px 0;
+  margin: 25px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
 }
 
 .summary {
   display: flex;
   justify-content: space-between;
+  gap: 12px;
   margin: 20px 0;
 }
 
 .summary div {
-  background: #eae8e8;
-  width: 48%;
+  flex: 1;
   text-align: center;
-  border-radius: 10px;
-  padding: 10px;
+  background: #fdfdfd;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.summary div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+/* Money colors */
 .money {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
   margin-top: 5px;
 }
 
 .plus {
-  color: green;
+  color: #2ecc71; /* nice green */
 }
 
 .minus {
-  color: rgb(240, 12, 12);
+  color: #e74c3c; /* red */
 }
 
+/* Transaction list */
 .list {
-  list-style-type: none;
-  margin-bottom: 30px;
-  max-height: 150px;
+  list-style: none;
+  max-height: 180px;
   overflow-y: auto;
+  padding-right: 5px;
 }
 
 .list li {
-  background-color: #f3f2f2;
-  padding: 10px;
-  margin: 8px 0;
-  border-right: 5px solid;
+  background: #ffffff;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-left: 6px solid;
+  border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 8px;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .list li.plus {
-  border-color: rgb(9, 153, 9);
+  border-color: #2ecc71;
 }
 
 .list li.minus {
-  border-color: rgb(221, 28, 28);
+  border-color: #e74c3c;
 }
 
+.list li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* Delete button */
 .delete-btn {
-  background: #f45858;
+  background: #e74c3c;
   border: none;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 5px;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
+.delete-btn:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Form input */
 .form-control {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 input {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  padding: 14px 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
 }
 
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Button */
 .btn {
-  background-color: #0678f1;
-  color: rgb(211, 204, 204);
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: #fff;
   border: none;
-  padding: 10px;
+  padding: 14px 0;
   width: 100%;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 12px;
   font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #055ebd;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
