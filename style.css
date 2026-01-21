@@ -172,5 +172,5 @@ input:focus {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(47, 47, 47, 0.2);
+  box-shadow: 0 10px 20px rgba(41, 41, 41, 0.2);
 }
